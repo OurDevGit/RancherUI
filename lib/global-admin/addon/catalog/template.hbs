@@ -1,0 +1,14 @@
+<section class="header clearfix">
+  <div class="right-buttons">
+    <button disabled={{rbac-prevents resource="catalog" scope="global" permission="create"}} class="btn bg-primary btn-sm" {{action "add"}}>
+      {{t 'catalogSettings.more.addActionLabel'}}
+    </button>
+  </div>
+
+  <h1>{{t 'catalogSettings.header'}}</h1>
+</section>
+
+{{custom-catalog
+    catalogs=model
+    mode="global"
+}}
